@@ -24,7 +24,8 @@ module.exports.run=async(client, message, args)=>{
         },
         {
             name:'Is A bot?',
-            value:person.user.bot
+            value:person.user.bot,
+            inine:true
         },
         {
             name:'Account Created Date',
