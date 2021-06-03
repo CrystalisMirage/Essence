@@ -41,6 +41,11 @@ module.exports.run=async(client, message, args)=>{
             name:'Profile Picture Link',
             value:person.user.displayAvatarURL(),
             inline:true
+        },
+        {
+            name: 'Joined Server Date',
+            value:person.joinedAt.toLocaleString(),
+            inline:true
         }
     )
     .setColor('ORANGE')
