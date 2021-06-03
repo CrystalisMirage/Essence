@@ -9,7 +9,7 @@ module.exports.run=async(client, message, args)=>{
     let embed=new MessageEmbed()
     .setTitle(`${person.displayName}'s Info`)
     .setAuthor(message.guild.members.cache.get(client.user.id).displayName,client.user.displayAvatarURL({dynamic:true}))
-    .setThumbnail(person.displayAvatarURL({dynamic:true}))
+    .setThumbnail(person.user.displayAvatarURL({dynamic:true}))
     .setDescription(`Some info about ${person}`)
     .addFields(
         {
