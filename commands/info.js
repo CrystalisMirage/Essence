@@ -25,7 +25,7 @@ module.exports.run=async(client, message, args)=>{
         {
             name:'Is A bot?',
             value:person.user.bot,
-            inine:true
+            inline:true
         },
         {
             name:'Account Created Date',
@@ -35,6 +35,11 @@ module.exports.run=async(client, message, args)=>{
         {
             name: 'User Presence',
             value:person.user.presence.status,
+            inline:true
+        },
+        {
+            name:'Profile Picture Link',
+            value:person.user.displayAvatarURL(),
             inline:true
         }
     )
