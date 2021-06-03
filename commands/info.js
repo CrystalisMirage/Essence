@@ -28,7 +28,7 @@ module.exports.run=async(client, message, args)=>{
         },
         {
             name:'Account Created Date',
-            value:person.user.createdAt,
+            value:person.user.createdAt.toLocaleString(),
             inline:true
         },
         {
@@ -40,5 +40,6 @@ module.exports.run=async(client, message, args)=>{
     .setColor('ORANGE')
     .setTimestamp()
     .setFooter(`${client.user.username}||${message.guild.name}`,client.user.displayAvatarURL({dynamic:true}))
+    
     message.channel.send(embed)
 }
