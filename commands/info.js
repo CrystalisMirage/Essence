@@ -25,6 +25,16 @@ module.exports.run=async(client, message, args)=>{
         {
             name:'Is A bot?',
             value:person.user.bot
+        },
+        {
+            name:'Account Created Date',
+            value:person.user.createdAt,
+            inline:true
+        },
+        {
+            name: 'User Presence',
+            value:person.user.presence.status,
+            inline:true
         }
     )
     .setColor('ORANGE')
