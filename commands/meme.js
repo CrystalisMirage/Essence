@@ -16,6 +16,7 @@ module.exports.run=async(client, message, args)=>{
         .setURL(data.postLink)
         .setAuthor(data.author)
         .setImage(data.url)
+        .setColor('ORANGE')
         .setTimestamp()
         .setFooter(`NSFW: ${data.nsfw}|| Subreddit: ${data.subreddit}||${message.guild.name}`)
         return message.channel.send(memeEmbed)
